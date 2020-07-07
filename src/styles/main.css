@@ -46,6 +46,7 @@ body {
   .aside-profile-tab {
     width: 55%;
     position: absolute;
+    display: none;
   }
 }
 @media screen and (max-width: 550px) {
@@ -213,6 +214,248 @@ body {
   background-color: #34c483;
   border-color: #34c483;
   outline: none;
+}
+
+.content-container {
+  width: 78%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1850px) {
+  .content-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content-container {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .content-container {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content-container {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-container {
+    width: 100%;
+  }
+}
+.content-container .mobile-my-account {
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .content-container .mobile-my-account {
+    display: block;
+  }
+}
+.content-container .mobile-my-account .my-account-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.content-container .mobile-my-account .my-account-container .square {
+  width: 90px;
+  height: 70px;
+  background-color: #F1F3F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  padding-left: 10px;
+}
+.content-container .mobile-my-account .my-account-container .square img {
+  width: 25px;
+  height: auto;
+  margin-top: 10px;
+}
+.content-container .mobile-my-account .my-account-container .square span {
+  font-size: 11px;
+  font-weight: 600;
+  color: black;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.content-container .mobile-my-account .my-account-container .circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  background-color: #F1F3F5;
+  margin-left: 50px;
+}
+.content-container .section-title {
+  width: 80%;
+  font-size: 22px;
+  font-weight: 600;
+  color: #9A9A9A;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .content-container .section-title {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+.content-container .section-devider {
+  width: 80%;
+  border-bottom: 2px solid #9A9A9A;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .content-container .section-devider {
+    width: 90%;
+  }
+}
+.content-container .secondary-name {
+  width: 80%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #009F80;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .content-container .secondary-name {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+.content-container .date-of-verification {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #009F80;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .content-container .date-of-verification {
+    width: 90%;
+    font-size: 12px;
+  }
+}
+
+.credit-cards-section {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../../assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 991px) {
+  .credit-cards-section {
+    display: none;
+  }
+}
+.credit-cards-section .credit-cards-row {
+  width: 85%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1100px) {
+  .credit-cards-section .credit-cards-row {
+    width: 95%;
+  }
+}
+.credit-cards-section .credit-cards1 {
+  width: 22%;
+  height: auto;
+}
+.credit-cards-section .credit-cards1 img {
+  width: 100%;
+  height: auto;
+}
+.credit-cards-section .credit-cards2 {
+  width: 22%;
+  height: auto;
+}
+.credit-cards-section .credit-cards2 img {
+  width: 100%;
+  height: auto;
+}
+.credit-cards-section .credit-cards3 {
+  width: 22%;
+  height: auto;
+}
+.credit-cards-section .credit-cards3 img {
+  width: 100%;
+  height: auto;
+}
+.credit-cards-section .credit-cards4 {
+  width: 22%;
+  height: auto;
+}
+.credit-cards-section .credit-cards4 img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-cards-mobile {
+  width: 100%;
+  height: 30vh;
+  display: none;
+  background-image: url("../../assets/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+@media screen and (max-width: 991px) {
+  .carousel-cards-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.carousel-cards-mobile .carousel {
+  width: 70%;
+}
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .carousel-cards-mobile .carousel {
+    width: 50%;
+  }
+}
+.carousel-cards-mobile .carousel .carousel-item {
+  width: 100%;
+}
+.carousel-cards-mobile .carousel .carousel-item img {
+  width: 100%;
+  height: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */
