@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container-row {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.aside-profile-tab {
+  width: 22%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #F1F3F5;
+  transition: all 500ms linear;
+  @media screen and (max-width: 1850px) {
+    width: 30%;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 35%;
+  }
+  @media screen and (max-width: 991px) {
+    width: 45%;
+  }
+  @media screen and (max-width: 800px) {
+    width: 55%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 55%;
+    position: absolute;
+  }
+  @media screen and (max-width: 550px) {
+    width: 75%;
+  }
+  @media screen and (max-width: 450px) {
+    width: 93%;
+  }
+  .icon-close {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -400px;
+    // border: 2px solid red;
+    position: absolute;
+    img {
+      width: 20px;
+      height: auto;
+      display: none;
+      cursor: pointer;
+      margin-right: 20px;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+  .name {
+    font-size: 30px;
+    font-weight: 600;
+    color: #009F80;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .limit-verification-container {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 17px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 10px;
+    }
+    .limit-box {
+      width: 100%;
+      height: 55px;
+      border-radius: 13px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .limit-text {
+        font-size: 16px;
+        font-weight: 600;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+  .personal-info-box {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: #9A9A9A;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        @media screen and (max-width: 550px) {
+          font-size: 15px;
+        }
+      }
+      hr {
+        width: 50%;
+        color: #9A9A9A;
+        @media screen and (max-width: 550px) {
+          width: 40%;
+        }
+      }
+    }
+    .info-1, .info-2, .info-3 {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      .dot {
+        width: 6px;
+        height: 6px;
+        background-color: transparent;
+        border-radius: 6px;
+        border: 3px solid #009F80;
+        margin-right: 10px;
+      }
+      .info-text {
+        font-size: 16px;
+        font-weight: 600;
+        color: #009F80;
+        margin-right: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        @media screen and (max-width: 550px) {
+          font-size: 14px;
+          margin-right: 7px;
+        }
+      }
+      .info-value {
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        @media screen and (max-width: 550px) {
+          font-size: 14px;
+        }
+      }
+    }
+    .hr {
+      width: 100%;
+      border-bottom: 1px solid #9A9A9A;
+      margin-top: 40px;
+    }
+  }
+  .button-settings {
+    width: 80%;
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    background-color: #13B86D;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+    &:hover {
+      background-color: #34c483;
+      border-color: #34c483;
+    }
+    &:focus {
+      background-color: #34c483;
+      border-color: #34c483;
+      outline: none;
+    }
+  }
+
+}
