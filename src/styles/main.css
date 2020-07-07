@@ -12,9 +12,78 @@ body {
   flex-direction: row;
 }
 
+.navbar-custom {
+  height: 80px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+@media screen and (max-width: 550px) {
+  .navbar-custom {
+    margin-left: 10px;
+  }
+}
+.navbar-custom .navbar-brand img {
+  width: auto;
+  height: 25px;
+}
+.navbar-custom .nav-item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #009F80;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.navbar-custom .nav-item .nav-link {
+  color: #009F80;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .nav-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.navbar-custom .menu-icon {
+  width: 30px;
+  height: auto;
+  margin-bottom: auto;
+}
+.navbar-custom .menu-icon img:focus {
+  outline: none;
+}
+.navbar-custom .collapse {
+  background-color: white;
+  z-index: 1200;
+  margin-top: 20px;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .collapse {
+    width: 100%;
+    height: 40vh;
+    margin-left: -35px;
+    margin-right: -20px;
+  }
+}
+.navbar-custom .collapse .navbar-nav {
+  z-index: 1200;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .collapse .navbar-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+.navbar-custom button:focus {
+  outline: none;
+}
+
 .aside-profile-tab {
   width: 22%;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,7 +293,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 1850px) {
   .content-container {
@@ -257,7 +326,6 @@ body {
   display: none;
   justify-self: flex-start;
   align-self: flex-start;
-  margin-top: -50px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -373,7 +441,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 991px) {
   .credit-cards-section {
@@ -612,6 +680,11 @@ body {
     margin-top: 10px;
     font-size: 16px;
     border: 2px solid #13B86D;
+  }
+}
+@media screen and (max-width: 550px) {
+  .payment-section .btn-primary-outline {
+    margin-bottom: 20px;
   }
 }
 

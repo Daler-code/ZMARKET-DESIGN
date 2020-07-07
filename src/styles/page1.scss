@@ -12,10 +12,80 @@ body {
   flex-direction: row;
 }
 
+// NAVBAR
+.navbar-custom {
+  height: 80px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  @media screen and (max-width: 550px) {
+    margin-left: 10px;
+  }
+  .navbar-brand {
+    img {
+      width: auto;
+      height: 25px;
+    }
+  }
+  .nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: #009F80;
+    margin-left: 25px;
+    margin-right: 25px;
+    .nav-link {
+      color: #009F80;
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .menu-icon {
+    width: 30px;
+    height: auto;
+    margin-bottom: auto;
+    img {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .collapse {
+    background-color: white;
+    z-index: 1200;
+    margin-top: 20px;
+    // transition: all ease-in-out 1s;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      height: 40vh;
+      margin-left: -35px;
+      margin-right: -20px;
+    }
+    .navbar-nav {
+      z-index: 1200;
+      // transition: all ease-in-out 1s;
+      @media screen and (max-width: 991px) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
 //ASIDE PROFILE TAB
 .aside-profile-tab {
   width: 22%;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,7 +273,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
   @media screen and (max-width: 1850px) {
     width: 70%;
   }
@@ -226,7 +296,6 @@ body {
     display: none;
     justify-self: flex-start;
     align-self: flex-start;
-    margin-top: -50px;
     margin-bottom: 30px;
     @media screen and (max-width: 768px) {
       display: block;
@@ -337,7 +406,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   @media screen and (max-width: 991px) {
     display: none;
   }
@@ -560,6 +629,9 @@ body {
       margin-top: 10px;
       font-size: 16px;
       border: 2px solid #13B86D;
+    }
+    @media screen and (max-width: 550px) {
+      margin-bottom: 20px;
     }
   }
 }
