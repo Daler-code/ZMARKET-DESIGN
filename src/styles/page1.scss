@@ -56,7 +56,6 @@ body {
     background-color: white;
     z-index: 1200;
     margin-top: 20px;
-    // transition: all ease-in-out 1s;
     @media screen and (max-width: 991px) {
       width: 100%;
       height: 40vh;
@@ -65,7 +64,6 @@ body {
     }
     .navbar-nav {
       z-index: 1200;
-      // transition: all ease-in-out 1s;
       @media screen and (max-width: 991px) {
         height: 100%;
         display: flex;
@@ -85,7 +83,7 @@ body {
 //ASIDE PROFILE TAB
 .aside-profile-tab {
   width: 22%;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

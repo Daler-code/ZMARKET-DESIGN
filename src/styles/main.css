@@ -83,7 +83,7 @@ body {
 
 .aside-profile-tab {
   width: 22%;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -686,6 +686,237 @@ body {
   .payment-section .btn-primary-outline {
     margin-bottom: 20px;
   }
+}
+
+.settings-page-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.settings-page-container .settings-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.settings-page-container .settings-section .section-title {
+  width: 90%;
+  font-size: 22px;
+  font-weight: 600;
+  color: #9A9A9A;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 991px) {
+  .settings-page-container .settings-section .section-title {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+.settings-page-container .settings-section .section-devider {
+  width: 90%;
+  border-bottom: 2px solid #9A9A9A;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .settings-page-container .settings-section .section-devider {
+    width: 90%;
+  }
+}
+.settings-page-container .settings-section .settings-page-row1 {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.settings-page-container .settings-section .input-container-settings-page {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .settings-page-container .settings-section .input-container-settings-page {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .settings-page-container .settings-section .input-container-settings-page {
+    width: 48%;
+  }
+}
+.settings-page-container .settings-section .input-container-settings-page span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-container-settings-page span {
+    font-size: 14px;
+  }
+}
+.settings-page-container .settings-section .input-container-settings-page .tel-input-row-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.settings-page-container .settings-section .input-container-settings-page .tel-input-row-container .mask {
+  width: 100px;
+  height: 55px;
+  background-color: #13B86D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-container-settings-page .tel-input-row-container .mask {
+    width: 80px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+.settings-page-container .settings-section .input-container2-settings-page {
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  .settings-page-container .settings-section .input-container2-settings-page {
+    width: 100%;
+  }
+}
+.settings-page-container .settings-section .input-container2-settings-page span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-container2-settings-page span {
+    font-size: 14px;
+  }
+}
+.settings-page-container .settings-section .input-filled-settings-page {
+  width: 100%;
+  height: 55px;
+  background-color: #13B86D;
+  color: white;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-filled-settings-page {
+    font-size: 14px;
+    height: 50px;
+  }
+}
+.settings-page-container .settings-section .input-outline-settings-page {
+  width: 100%;
+  height: 55px;
+  border: 2px solid #13B86D;
+  border-radius: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: 1s;
+  background-color: white;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-outline-settings-page {
+    height: 50px;
+  }
+}
+.settings-page-container .settings-section .input-outline-settings-page:hover {
+  border-color: #009F80;
+}
+.settings-page-container .settings-section .input-outline-settings-page:hover::placeholder {
+  color: #009F80;
+}
+.settings-page-container .settings-section .input-outline-settings-page:focus {
+  outline: none;
+  border-radius: none;
+}
+.settings-page-container .settings-section .input-outline-settings-page::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: #13B86D;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-outline-settings-page::placeholder {
+    font-size: 14px;
+  }
+}
+.settings-page-container .settings-section .input-outline-settings-page option {
+  font-size: 18px;
+  font-weight: 400;
+  color: #13B86D;
+}
+.settings-page-container .settings-section select {
+  text-indent: 20px;
+  color: #13B86D;
+}
+.settings-page-container .settings-section .input-outline-tel-settings-page {
+  width: 100%;
+  height: 55px;
+  border: 2px solid #13B86D;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 1s;
+  background-color: white;
+  text-indent: 20px;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-outline-tel-settings-page {
+    height: 50px;
+    text-indent: 6px;
+  }
+}
+.settings-page-container .settings-section .input-outline-tel-settings-page:hover {
+  border-color: #009F80;
+}
+.settings-page-container .settings-section .input-outline-tel-settings-page:hover::placeholder {
+  color: #009F80;
+}
+.settings-page-container .settings-section .input-outline-tel-settings-page:focus {
+  outline: none;
+  border-radius: none;
+}
+.settings-page-container .settings-section .input-outline-tel-settings-page::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: #13B86D;
+}
+@media screen and (max-width: 550px) {
+  .settings-page-container .settings-section .input-outline-tel-settings-page::placeholder {
+    font-size: 14px;
+  }
+}
+.settings-page-container .settings-section .input-outline-tel-settings-page option {
+  font-size: 18px;
+  font-weight: 400;
+  color: #13B86D;
 }
 
 /*# sourceMappingURL=main.css.map */
