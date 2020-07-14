@@ -115,6 +115,54 @@
   </div>
   <!---------------------CREDIT-CARDS-SECTION-END-------------------->
   </div>
+
+  <!------------------------------INPUT-SECTION-START---------------->
+  <div class="input-section">
+    <div class="inputs-row">
+      <div class="input-container-column">
+        <span>Номер карты</span>
+        <div class="input-credit-cards-row">
+          <input 
+            id="ccn" 
+            type="tel" 
+            inputmode="numeric" 
+            pattern="[0-9\s]{13,19}" 
+            autocomplete="cc-number" 
+            maxlength="16" 
+            class="credit-cards" 
+            placeholder="0000 0000 0000 0000"
+          >
+          <input 
+            type="tel" 
+            class="credit-card-expiration" 
+            placeholder="мм/гг"  
+            maxlength="4" 
+          />
+
+        </div>
+      </div>
+      <div class="input-container-column">
+        <span>Kод смс</span>
+        <input type="text" class="credit-card-name" placeholder="Введите код смс ">
+      </div>
+    </div>
+    <button class="add-cards-primary-btn">
+      Привязать карту
+    </button>
+  </div>
+  <!------------------------------INPUT-SECTION-END------------------>
+  <!-------------------------------ALERT-BOX-START------------------->
+  <div class="alertbox">
+    <div class="alert-heading">
+      Мы очень серезно относимся к информационной безопасности.
+    </div>
+    <div class="alert-text">
+      Все данные передаются в зашифрованном криптографическом виде и не доступны третьим лицам. 
+      Данные хранятся в безопасности.
+    </div>
+    <button class="alert-btn">Подробнее</button>
+  </div>
+  <!-------------------------------ALERT-BOX-END--------------------->
   <!---------------------Content-Container-End------------------------->
   </div>
 

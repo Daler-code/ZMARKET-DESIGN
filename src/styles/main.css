@@ -1808,7 +1808,9 @@ body {
   width: 100vw;
   height: fit-content;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-custom {
@@ -1995,8 +1997,18 @@ body {
 .carousel-cards-add-cards-page .carousel-custom .carousel-control-next {
   margin-right: -50px;
 }
+@media screen and (max-width: 550px) {
+  .carousel-cards-add-cards-page .carousel-custom .carousel-control-next {
+    margin-right: -30px;
+  }
+}
 .carousel-cards-add-cards-page .carousel-custom .carousel-control-prev {
   margin-left: -50px;
+}
+@media screen and (max-width: 550px) {
+  .carousel-cards-add-cards-page .carousel-custom .carousel-control-prev {
+    margin-left: -30px;
+  }
 }
 @media screen and (max-width: 1300px) {
   .carousel-cards-add-cards-page .carousel-custom {
@@ -2069,6 +2081,304 @@ body {
     margin-left: 20px;
     margin-top: -30px;
   }
+}
+
+.input-section {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  .input-section {
+    width: 90%;
+  }
+}
+.input-section .inputs-row {
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1100px) {
+  .input-section .inputs-row {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .input-section .inputs-row {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .input-section .inputs-row {
+    flex-direction: column;
+  }
+}
+.input-section .inputs-row .input-container-column {
+  width: 45%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 650px) {
+  .input-section .inputs-row .input-container-column {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .input-section .inputs-row .input-container-column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.input-section .inputs-row .input-container-column span {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 550px) {
+  .input-section .inputs-row .input-container-column span {
+    font-size: 16px;
+  }
+}
+.input-section .inputs-row .input-container-column .credit-cards {
+  width: 100%;
+  height: 55px;
+  border-radius: 0;
+  text-indent: 20px;
+  transition: 1s;
+  border-left: 2px solid #13B86D;
+  border-top: 2px solid #13B86D;
+  border-bottom: 2px solid #13B86D;
+  border-right: none;
+}
+@media screen and (max-width: 550px) {
+  .input-section .inputs-row .input-container-column .credit-cards {
+    height: 50px;
+    margin-top: 0;
+    border-left: 1.5px solid #13B86D;
+    border-top: 1.5px solid #13B86D;
+    border-bottom: 1.5px solid #13B86D;
+    border-right: none;
+  }
+}
+.input-section .inputs-row .input-container-column .credit-cards::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  text-indent: 20px;
+  color: #13B86D90;
+  transition: 1s;
+}
+@media screen and (max-width: 550px) {
+  .input-section .inputs-row .input-container-column .credit-cards::placeholder {
+    font-size: 14px;
+  }
+}
+.input-section .inputs-row .input-container-column .credit-cards:hover {
+  border-color: #009F80;
+  border-right: none;
+}
+.input-section .inputs-row .input-container-column .credit-cards:hover::placeholder {
+  color: #009F80;
+}
+.input-section .inputs-row .input-container-column .credit-cards:focus {
+  outline: none;
+  border-radius: none;
+}
+.input-section .inputs-row .input-container-column .credit-card-name {
+  width: 100%;
+  height: 55px;
+  border-radius: 0;
+  border: 2px solid #13B86D;
+  text-indent: 20px;
+  transition: 1s;
+}
+@media screen and (max-width: 550px) {
+  .input-section .inputs-row .input-container-column .credit-card-name {
+    height: 50px;
+    margin-top: 0;
+    border: 1.5px solid #13B86D;
+  }
+}
+.input-section .inputs-row .input-container-column .credit-card-name::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  text-indent: 20px;
+  color: #13B86D90;
+  transition: 1s;
+}
+@media screen and (max-width: 550px) {
+  .input-section .inputs-row .input-container-column .credit-card-name::placeholder {
+    font-size: 14px;
+  }
+}
+.input-section .inputs-row .input-container-column .credit-card-name:focus {
+  outline: none;
+  border-radius: none;
+}
+.input-section .inputs-row .input-container-column .credit-card-name:hover {
+  border-color: #009F80;
+}
+.input-section .inputs-row .input-container-column .credit-card-name:hover::placeholder {
+  color: #009F80;
+}
+.input-section .add-cards-primary-btn {
+  width: 40%;
+  height: 65px;
+  background-color: #13B86D;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 13px;
+  border: none;
+  margin-top: 50px;
+}
+.input-section .add-cards-primary-btn:focus {
+  outline: none;
+}
+.input-section .add-cards-primary-btn:hover {
+  background-color: #009F80;
+}
+@media screen and (max-width: 991px) {
+  .input-section .add-cards-primary-btn {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .input-section .add-cards-primary-btn {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .input-section .add-cards-primary-btn {
+    height: 55px;
+    width: 100%;
+    margin-top: 0;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
+
+.alertbox {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F3F5;
+  border-radius: 13px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.alertbox .alert-heading {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+@media screen and (max-width: 550px) {
+  .alertbox .alert-heading {
+    font-size: 16px;
+  }
+}
+.alertbox .alert-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #717171;
+  margin-top: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .alertbox .alert-text {
+    font-size: 14px;
+  }
+}
+.alertbox .alert-btn {
+  width: 180px;
+  height: 55px;
+  background-color: transparent;
+  border-radius: 13px;
+  border: 2px solid #13B86D;
+  font-size: 16px;
+  color: #13B86D;
+  font-weight: 500;
+  transition: 1s;
+  margin-top: 30px;
+}
+@media screen and (max-width: 550px) {
+  .alertbox .alert-btn {
+    margin-top: 20px;
+  }
+}
+.alertbox .alert-btn:hover {
+  border-color: #009F80;
+  color: #009F80;
+}
+.alertbox .alert-btn:focus {
+  outline: none;
+}
+
+.input-credit-cards-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.input-credit-cards-row .credit-card-expiration {
+  width: 70px;
+  height: 55px;
+  border-radius: 0;
+  border-right: 2px solid #13B86D;
+  border-top: 2px solid #13B86D;
+  border-bottom: 2px solid #13B86D;
+  border-left: none;
+  text-indent: 10px;
+  transition: 1s;
+}
+@media screen and (max-width: 550px) {
+  .input-credit-cards-row .credit-card-expiration {
+    height: 50px;
+    margin-top: 0;
+    border-right: 1.5px solid #13B86D;
+    border-top: 1.5px solid #13B86D;
+    border-bottom: 1.5px solid #13B86D;
+  }
+}
+.input-credit-cards-row .credit-card-expiration::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  text-indent: 10px;
+  color: #13B86D90;
+  transition: 1s;
+}
+@media screen and (max-width: 550px) {
+  .input-credit-cards-row .credit-card-expiration::placeholder {
+    font-size: 14px;
+  }
+}
+.input-credit-cards-row .credit-card-expiration:focus {
+  outline: none;
+  border-radius: none;
+}
+.input-credit-cards-row .credit-card-expiration:hover {
+  border-color: #009F80;
+  border-left: none;
+}
+.input-credit-cards-row .credit-card-expiration:hover::placeholder {
+  color: #009F80;
 }
 
 /*# sourceMappingURL=main.css.map */
