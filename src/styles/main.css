@@ -2382,4 +2382,212 @@ body {
   color: #009F80;
 }
 
+.popup-container-payments {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: table;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.61);
+  z-index: 888;
+}
+
+.popup-wrapper-payments {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-component-payments {
+  width: 50vw;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .popup-component-payments {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .popup-component-payments {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .popup-component-payments {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .popup-component-payments {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .popup-component-payments {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.popup-input-payments {
+  width: 100%;
+  height: 55px;
+  border: 2px solid #13B86D;
+  background-color: white;
+  color: #13B86D;
+  border-radius: 0;
+  transition: 1s;
+  text-indent: 0;
+  padding: 0;
+  text-indent: 20px;
+}
+.popup-input-payments::placeholder {
+  font-size: 17px;
+  font-weight: 600;
+  color: #13B86D;
+  text-indent: 20px;
+}
+.popup-input-payments:focus {
+  border-color: #00CCA4;
+  outline: none;
+}
+.popup-input-payments:focus::placeholder {
+  color: #009F80;
+}
+.popup-input-payments:hover {
+  border-color: #009F80;
+}
+.popup-input-payments:hover::placeholder {
+  color: #009F80;
+}
+@media screen and (max-width: 450px) {
+  .popup-input-payments {
+    height: 50px;
+  }
+  .popup-input-payments::placeholder {
+    font-size: 15px;
+  }
+}
+
+.popup-btn-primary-payments {
+  width: 380px;
+  height: 65px;
+  background-color: #13B86D;
+  border-radius: 13px;
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  margin-top: 0;
+  border: none;
+  cursor: pointer;
+}
+.popup-btn-primary-payments:hover {
+  background-color: #009F80;
+}
+.popup-btn-primary-payments:focus {
+  background-color: #009F80;
+  color: white;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .popup-btn-primary-payments {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 550px) {
+  .popup-btn-primary-payments {
+    height: 55px;
+    width: 330px;
+  }
+}
+
+.popup-input-contaner-column {
+  width: 380px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 550px) {
+  .popup-input-contaner-column {
+    width: 330px;
+    font-size: 16px;
+  }
+}
+.popup-input-contaner-column span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #13B86D;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 550px) {
+  .popup-input-contaner-column span {
+    font-size: 16px;
+  }
+}
+
+.credit-card-payments {
+  width: 380px;
+  height: 240px;
+  background-image: url("../../assets/images/cardsZmarket1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 12px 32px #00000013;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-radius: 13px;
+}
+@media screen and (max-width: 550px) {
+  .credit-card-payments {
+    width: 330px;
+    height: 200px;
+  }
+}
+.credit-card-payments h4 {
+  font-size: 19px;
+  font-weight: 600;
+  color: black;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 550px) {
+  .credit-card-payments h4 {
+    font-size: 16px;
+  }
+}
+.credit-card-payments h5 {
+  font-size: 19px;
+  font-weight: 600;
+  color: black;
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 550px) {
+  .credit-card-payments h5 {
+    font-size: 16px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
