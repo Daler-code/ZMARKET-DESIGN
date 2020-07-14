@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container-row-add-cards-page {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+// NAVBAR
+.navbar-custom {
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  border: none;
+  position: fixed;
+  .navbar-brand {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    img {
+      width: auto;
+      height: 25px;
+      @media screen and (max-width: 550px) {
+        width: auto;
+        height: 20px;
+      }
+    }
+  }
+  .nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: #009F80;
+    margin-left: 25px;
+    margin-right: 25px;
+    .nav-link {
+      color: #009F80;
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .menu-icon {
+    width: 30px;
+    height: auto;
+    margin-bottom: auto;
+    img {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .collapse {
+    background-color: white;
+    z-index: 888;
+    @media screen and (max-width: 991px) {
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+
+    .navbar-nav {
+      z-index: 888;
+      background-color: white;
+        @media screen and (max-width: 991px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 50vh;
+          margin: 0;
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    }
+  }
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+  .nav-language {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 25px;
+    .language-item {
+      width: 35px;
+      height: 35px;
+      border-radius: 40px;
+      border: 2px solid #009F80;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #009F80;
+      margin-left: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #009F80;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+// Content Continer of the page
+.content-container-add-cards-page {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  // section title
+  .section-title-add-cards-page {
+    width: 80%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #009F80;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+      font-size: 16px;
+    }
+  }
+
+  .secondary-title-add-cards-page {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #009F80;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+      font-size: 14px;
+    }
+  }
+}
+
+
+// Credit-Cards-Mobile
+.carousel-cards-add-cards-page {
+  width: 100%;
+  height: 40vh;
+  background-image: url('../../assets/images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 450px) {
+    height: 38vh;
+  }
+  .carousel-custom {
+    width: 26%;
+    .carousel-indicators {
+      position: absolute;
+      margin-bottom: -30px;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .carousel-control-next {
+      margin-right: -50px;
+    }
+    .carousel-control-prev {
+      margin-left: -50px;
+    }
+    @media screen and (max-width: 1300px) {
+      width: 30%;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 1100px) {
+      width: 45%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 55%;
+    }
+    @media screen and (max-width: 800px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 700px) {
+      width: 65%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 400px) {
+      width: 80%;
+    }
+    .carousel-item  {
+      h4 {
+        font-size: 18px;
+        color: black;
+        margin-top: 25px;
+        margin-left: 30px;
+        position: absolute;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+      h5 {
+        font-size: 18px;
+        color: black;
+        margin-top: -40px;
+        margin-left: 30px;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+          margin-left: 20px;
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+}
