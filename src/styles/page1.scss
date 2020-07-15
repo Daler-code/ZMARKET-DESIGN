@@ -12,112 +12,6 @@ body {
   flex-direction: row;
 }
 
-// NAVBAR
-.navbar-custom {
-  width: 100vw;
-  height: 80px;
-  background-color: white;
-  border: none;
-  position: fixed;
-  .navbar-brand {
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    img {
-      width: auto;
-      height: 25px;
-      @media screen and (max-width: 550px) {
-        width: auto;
-        height: 20px;
-      }
-    }
-  }
-  .nav-item {
-    font-size: 18px;
-    font-weight: 600;
-    color: #009F80;
-    margin-left: 25px;
-    margin-right: 25px;
-    .nav-link {
-      color: #009F80;
-    }
-    @media screen and (max-width: 991px) {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-  .menu-icon {
-    width: 30px;
-    height: auto;
-    margin-bottom: auto;
-    img {
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-  .collapse {
-    background-color: white;
-    z-index: 888;
-    @media screen and (max-width: 991px) {
-      margin-left: -50px;
-      margin-right: -50px;
-    }
-
-    .navbar-nav {
-      z-index: 888;
-      background-color: white;
-        @media screen and (max-width: 991px) {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: center;
-          height: 50vh;
-          margin: 0;
-          padding: 0;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    }
-  }
-  button {
-    &:focus {
-      outline: none;
-    }
-  }
-  .nav-language {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 25px;
-    .language-item {
-      width: 35px;
-      height: 35px;
-      border-radius: 40px;
-      border: 2px solid #009F80;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      color: #009F80;
-      margin-left: 20px;
-      cursor: pointer;
-      &:hover {
-        color: #009F80;
-      }
-    }
-    @media screen and (max-width: 991px) {
-      margin-left: 0;
-      margin-right: 20px;
-    }
-  }
-}
-
 //ASIDE PROFILE TAB
 .aside-profile-tab {
   width: 22%;
@@ -329,50 +223,33 @@ body {
     width: fit-content;
     height: fit-content;
     display: none;
-    justify-self: flex-start;
-    align-self: flex-start;
     margin-bottom: 30px;
+    margin-right: auto;
     @media screen and (max-width: 768px) {
       display: block;
     }
     .my-account-container {
-      width: fit-content;
-      height: fit-content;
+      width: 130px;
+      height: auto;
       display: flex;
-      flex-direction: row;
-      .square {
-        width: 90px;
-        height: 60px;
-        background-color: #F1F3F5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        position: absolute;
-        padding-left: 10px;
-        img {
-          width: 25px;
-          height: auto;
-          margin-top: 10px;
-        }
-        span {
-          font-size: 11px;
-          font-weight: 600;
-          color: black;
-          margin-top: 5px;
-          font-family: Arial, Helvetica, sans-serif;
-          margin-bottom: 10px
-        }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('../../assets/icons/MyAccountBtn.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      margin-left: -10px;
+      img {
+        margin-top: 10px;
+        width: 25px;
+        height: auto;
       }
-      .circle {
-        width: 68px;
-        height: 68px;
-        border-radius: 68px;
-        background-color:  #F1F3F5;
-        margin-left: 50px;
-        margin-top: -4px;
-
+      h1 {
+        font-size: 13px;
+        font-weight: 700;
+        color: #009F80;
+        margin-top: 10px;
       }
     }
   }
@@ -641,9 +518,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 30px;
-  @media screen and (max-width: 450px) {
-    height: 25vh;
-  }
   @media screen and (max-width: 991px) {
     display: flex;
     justify-content: center;
@@ -654,6 +528,12 @@ body {
     @media screen and (min-width: 550px) and (max-width: 768px) {
       width: 50%;
     }
+  .carousel-control-prev {
+    margin-left: -30px;
+  }
+  .carousel-control-next {
+    margin-right: -30px;
+  }
     .carousel-item  {
       width: 100%;
       h4 {
@@ -826,5 +706,16 @@ body {
     @media screen and (max-width: 550px) {
       margin-bottom: 20px;
     }
+  }
+}
+
+
+.alert-danger-user-cabinet-container {
+  width: 90%;
+  @media screen and (max-width: 550px) {
+    strong {
+      font-size: 15px;
+    }
+    font-size: 13px;
   }
 }

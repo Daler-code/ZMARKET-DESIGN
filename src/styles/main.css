@@ -12,116 +12,6 @@ body {
   flex-direction: row;
 }
 
-.navbar-custom {
-  width: 100vw;
-  height: 80px;
-  background-color: white;
-  border: none;
-  position: fixed;
-}
-.navbar-custom .navbar-brand {
-  width: fit-content;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-}
-.navbar-custom .navbar-brand img {
-  width: auto;
-  height: 25px;
-}
-@media screen and (max-width: 550px) {
-  .navbar-custom .navbar-brand img {
-    width: auto;
-    height: 20px;
-  }
-}
-.navbar-custom .nav-item {
-  font-size: 18px;
-  font-weight: 600;
-  color: #009F80;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-.navbar-custom .nav-item .nav-link {
-  color: #009F80;
-}
-@media screen and (max-width: 991px) {
-  .navbar-custom .nav-item {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-.navbar-custom .menu-icon {
-  width: 30px;
-  height: auto;
-  margin-bottom: auto;
-}
-.navbar-custom .menu-icon img:focus {
-  outline: none;
-}
-.navbar-custom .collapse {
-  background-color: white;
-  z-index: 888;
-}
-@media screen and (max-width: 991px) {
-  .navbar-custom .collapse {
-    margin-left: -50px;
-    margin-right: -50px;
-  }
-}
-.navbar-custom .collapse .navbar-nav {
-  z-index: 888;
-  background-color: white;
-}
-@media screen and (max-width: 991px) {
-  .navbar-custom .collapse .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50vh;
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.navbar-custom button:focus {
-  outline: none;
-}
-.navbar-custom .nav-language {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-right: 25px;
-}
-.navbar-custom .nav-language .language-item {
-  width: 35px;
-  height: 35px;
-  border-radius: 40px;
-  border: 2px solid #009F80;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: #009F80;
-  margin-left: 20px;
-  cursor: pointer;
-}
-.navbar-custom .nav-language .language-item:hover {
-  color: #009F80;
-}
-@media screen and (max-width: 991px) {
-  .navbar-custom .nav-language {
-    margin-left: 0;
-    margin-right: 20px;
-  }
-}
-
 .aside-profile-tab {
   width: 22%;
   height: 100vh;
@@ -364,9 +254,8 @@ body {
   width: fit-content;
   height: fit-content;
   display: none;
-  justify-self: flex-start;
-  align-self: flex-start;
   margin-bottom: 30px;
+  margin-right: auto;
 }
 @media screen and (max-width: 768px) {
   .content-container .mobile-my-account {
@@ -374,43 +263,28 @@ body {
   }
 }
 .content-container .mobile-my-account .my-account-container {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-.content-container .mobile-my-account .my-account-container .square {
-  width: 90px;
-  height: 60px;
-  background-color: #F1F3F5;
+  width: 130px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("../../assets/icons/MyAccountBtn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
-  position: absolute;
-  padding-left: 10px;
+  margin-left: -10px;
 }
-.content-container .mobile-my-account .my-account-container .square img {
+.content-container .mobile-my-account .my-account-container img {
+  margin-top: 10px;
   width: 25px;
   height: auto;
+}
+.content-container .mobile-my-account .my-account-container h1 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #009F80;
   margin-top: 10px;
-}
-.content-container .mobile-my-account .my-account-container .square span {
-  font-size: 11px;
-  font-weight: 600;
-  color: black;
-  margin-top: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 10px;
-}
-.content-container .mobile-my-account .my-account-container .circle {
-  width: 68px;
-  height: 68px;
-  border-radius: 68px;
-  background-color: #F1F3F5;
-  margin-left: 50px;
-  margin-top: -4px;
 }
 .content-container .section-title {
   width: 80%;
@@ -732,11 +606,6 @@ body {
   background-repeat: no-repeat;
   margin-top: 30px;
 }
-@media screen and (max-width: 450px) {
-  .carousel-cards-mobile {
-    height: 25vh;
-  }
-}
 @media screen and (max-width: 991px) {
   .carousel-cards-mobile {
     display: flex;
@@ -751,6 +620,12 @@ body {
   .carousel-cards-mobile .carousel {
     width: 50%;
   }
+}
+.carousel-cards-mobile .carousel .carousel-control-prev {
+  margin-left: -30px;
+}
+.carousel-cards-mobile .carousel .carousel-control-next {
+  margin-right: -30px;
 }
 .carousel-cards-mobile .carousel .carousel-item {
   width: 100%;
@@ -939,6 +814,18 @@ body {
 @media screen and (max-width: 550px) {
   .payment-section .btn-primary-outline {
     margin-bottom: 20px;
+  }
+}
+
+.alert-danger-user-cabinet-container {
+  width: 90%;
+}
+@media screen and (max-width: 550px) {
+  .alert-danger-user-cabinet-container {
+    font-size: 13px;
+  }
+  .alert-danger-user-cabinet-container strong {
+    font-size: 15px;
   }
 }
 
@@ -1401,6 +1288,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 .agreement-section .section-title {
   width: 90%;
@@ -1434,7 +1322,8 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .agreement-section .agreement-container .text-wrappper {
   width: fit-content;
@@ -2587,6 +2476,139 @@ body {
 @media screen and (max-width: 550px) {
   .credit-card-payments h5 {
     font-size: 16px;
+  }
+}
+
+.navbar-custom {
+  width: 100vw;
+  height: 90px;
+  background-color: black;
+  border: none;
+  position: fixed;
+  z-index: 1000;
+}
+.navbar-custom .navbar-brand {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.navbar-custom .navbar-brand img {
+  width: auto;
+  height: 25px;
+}
+@media screen and (max-width: 550px) {
+  .navbar-custom .navbar-brand img {
+    width: auto;
+    height: 20px;
+  }
+}
+.navbar-custom .nav-item {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.navbar-custom .nav-item .nav-link {
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .nav-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.navbar-custom .menu-icon {
+  width: 30px;
+  height: auto;
+  margin-bottom: auto;
+}
+.navbar-custom .menu-icon img:focus {
+  outline: none;
+}
+.navbar-custom .collapse {
+  background-color: black;
+  z-index: 888;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .collapse {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+.navbar-custom .collapse .navbar-nav {
+  z-index: 888;
+  background-color: black;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .collapse .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.navbar-custom button:focus {
+  outline: none;
+}
+.navbar-custom .nav-language {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 25px;
+}
+.navbar-custom .nav-language .language-item {
+  width: 35px;
+  height: 35px;
+  border-radius: 40px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.navbar-custom .nav-language .language-item:hover {
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .nav-language {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+.navbar-custom .nav-zpay {
+  width: 36px;
+  height: auto;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -3px;
+}
+.navbar-custom .nav-zpay img {
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 40px;
+  margin: auto;
+}
+@media screen and (max-width: 991px) {
+  .navbar-custom .nav-zpay {
+    display: none;
   }
 }
 
