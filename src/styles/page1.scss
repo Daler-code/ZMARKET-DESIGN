@@ -12,6 +12,154 @@ body {
   flex-direction: row;
 }
 
+// NAVBAR
+.navbar-custom-user-cabinet {
+  width: 100vw;
+  height: 90px;
+  background-color: black;
+  border: none;
+  position: fixed;
+  z-index: 1000;
+  .navbar-brand-user-cabinet {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    img {
+      width: auto;
+      height: 25px;
+      @media screen and (max-width: 550px) {
+        width: auto;
+        height: 20px;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  .nav-item-user-cabinet {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    .nav-link {
+      color: white;
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .menu-icon-user-cabinet {
+    width: 30px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+      &:focus {
+        outline: none;
+      }
+    }
+    float: left;
+  }
+  .collapse-user-cabinet {
+    background-color: black;
+    z-index: 888;
+    @media screen and (max-width: 991px) {
+      width: 100vw;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+
+    .navbar-nav-user-cabinet {
+      z-index: 888;
+      background-color: black;
+        @media screen and (max-width: 991px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 50vh;
+          padding: 0;
+        }
+    }
+  }
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+  .nav-language {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 25px;
+    .language-item {
+      width: 35px;
+      height: 35px;
+      border-radius: 40px;
+      border: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: white;
+      margin-left: 20px;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+  .nav-zpay {
+    width: 36px;
+    height: auto;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -3px;
+    img {
+      width: 100%;
+      height: auto;
+      border: 2px solid white;
+      border-radius: 40px;
+      margin: auto;
+    }
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  .my-profile-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #009F80;
+    margin-right: 8px;
+    cursor: pointer;
+    @media screen and (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 23px;
+      height: auto;
+    }
+  }
+}
+
 //ASIDE PROFILE TAB
 .aside-profile-tab {
   width: 22%;
@@ -218,41 +366,7 @@ body {
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-  // my account toggle btn mobile
-  .mobile-my-account {
-    width: fit-content;
-    height: fit-content;
-    display: none;
-    margin-bottom: 30px;
-    margin-right: auto;
-    @media screen and (max-width: 768px) {
-      display: block;
-    }
-    .my-account-container {
-      width: 130px;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('../../assets/icons/MyAccountBtn.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      cursor: pointer;
-      margin-left: -10px;
-      img {
-        margin-top: 10px;
-        width: 25px;
-        height: auto;
-      }
-      h1 {
-        font-size: 13px;
-        font-weight: 700;
-        color: #009F80;
-        margin-top: 10px;
-      }
-    }
-  }
+
   // section title
   .section-title {
     width: 80%;

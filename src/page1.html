@@ -13,9 +13,9 @@
 </head>
 <body>
   <!-----------------------------NAVBAR-START------------------------------>
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <a class="navbar-brand" href="page1.html"><img src="../assets/icons/Z-Market-logo-white.png" alt="brand"></a>
-    <button 
+  <nav class="navbar navbar-expand-lg navbar-custom-user-cabinet">
+    <a class="navbar-brand navbar-brand-user-cabinet" href="page1.html"><img src="../assets/icons/Z-Market-logo-white.png" alt="brand"></a>
+    <button
       class="navbar-toggler" 
       type="button" 
       data-toggle="collapse" 
@@ -24,20 +24,23 @@
       aria-expanded="false" 
       aria-label="Toggle navigation"
     >
-      <img class='menu-icon' src="../assets/icons/MobileMenuHamburder-white.png" alt="menu">
+      <img class='menu-icon menu-icon-user-cabinet' src="../assets/icons/MobileMenuHamburder-white.png" alt="menu">
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+    <div class="my-profile-icon">
+      <img src="../assets/icons/icon-person.png" alt="my-account">
+    </div>
+    <div class="collapse collapse-user-cabinet navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-nav-user-cabinet ml-auto">
+        <li class="nav-item nav-item-user-cabinet active">
           <a class="nav-link" href="./page1.html">Личный кабинет</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-item-user-cabinet">
           <a class="nav-link" href="./page3.html">Договора</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-item-user-cabinet">
           <a class="nav-link" href="./page2.html">Настройки</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-item-user-cabinet">
           <a class="nav-link" href="#">Выйти</a>
         </li>
         <li class="nav-zpay">
@@ -48,6 +51,7 @@
           <a class="language-item">RU</a>
         </li>
       </ul>
+
     </div>
   </nav>
   <!-----------------------------NAVBAR-END-------------------------------->
@@ -90,18 +94,6 @@
 
     <!---------------------Content-Container-Start----------------------->
     <div class="content-container">
-    <!--------------------MOBILE-MY-ACCOUNT-TOGGLE-START----------------->
-      <div class="mobile-my-account">
-        <div class="my-account-container">
-          <!-- <div class="square"> -->
-            <img src="../assets/icons/account.png" alt="account">
-            <!-- <span>Мой профайл</span> -->
-            <h1>ID: 1111111</h1>
-          <!-- </div> -->
-          <!-- <div class="circle"></div> -->
-        </div>
-      </div>
-    <!-------------------MOBILE-MY-ACCOUNT-TOGGLE-END-------------------->
     <!-------------------ALERT-DANGER-START------------------------------>
     <div class="alert-danger-user-cabinet-container">
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -210,7 +202,7 @@
       <div class="btn-wrapper"> 
         <button class='btn-secondary-outline'> <img src="../assets/icons/click_logo.png" alt="icon"></button>
         <button class='btn-secondary-outline'><img class="payme" src="../assets/icons/payme_logo.png" alt="icon"></button>
-        <button class='btn-secondary-outline'><img src="../assets/icons/logo.oson.png" alt="icon"></button>
+        <button class='btn-secondary-outline'><img src="../assets/icons/myUzCard.svg" alt="icon"></button>
         <button class='btn-secondary-outline'><img src="../assets/icons/apelsin.png" alt="icon"><span>apelsin</span></button>
       </div>
       <button class="btn-primary-outline">ПОПОЛНИТЬ</button>
