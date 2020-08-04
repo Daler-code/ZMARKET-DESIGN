@@ -1,0 +1,523 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container-row-add-cards-page {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// NAVBAR
+.navbar-custom {
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  border: none;
+  position: fixed;
+  .navbar-brand {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    img {
+      width: auto;
+      height: 25px;
+      @media screen and (max-width: 550px) {
+        width: auto;
+        height: 20px;
+      }
+    }
+  }
+  .nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: #009F80;
+    margin-left: 25px;
+    margin-right: 25px;
+    .nav-link {
+      color: #009F80;
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .menu-icon {
+    width: 30px;
+    height: auto;
+    margin-bottom: auto;
+    img {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .collapse {
+    background-color: white;
+    z-index: 888;
+    @media screen and (max-width: 991px) {
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+
+    .navbar-nav {
+      z-index: 888;
+      background-color: white;
+        @media screen and (max-width: 991px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 50vh;
+          margin: 0;
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    }
+  }
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+  .nav-language {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 25px;
+    .language-item {
+      width: 35px;
+      height: 35px;
+      border-radius: 40px;
+      border: 2px solid #009F80;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #009F80;
+      margin-left: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #009F80;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+// Content Continer of the page
+.content-container-add-cards-page {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  // section title
+  .section-title-add-cards-page {
+    width: 80%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #009F80;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+      font-size: 16px;
+    }
+  }
+
+  .secondary-title-add-cards-page {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #009F80;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+      font-size: 14px;
+    }
+  }
+}
+
+
+// Credit-Cards-Mobile
+.carousel-cards-add-cards-page {
+  width: 100%;
+  height: 40vh;
+  background-image: url('../../assets/images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 450px) {
+    height: 38vh;
+  }
+  .carousel-custom {
+    width: 26%;
+    .carousel-indicators {
+      position: absolute;
+      margin-bottom: -30px;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .carousel-control-next {
+      margin-right: -50px;
+      @media screen and (max-width: 550px) {
+        margin-right: -30px;
+      }
+    }
+    .carousel-control-prev {
+      margin-left: -50px;
+      @media screen and (max-width: 550px) {
+        margin-left: -30px;
+      }
+    }
+    @media screen and (max-width: 1300px) {
+      width: 30%;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 1100px) {
+      width: 45%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 55%;
+    }
+    @media screen and (max-width: 800px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 700px) {
+      width: 65%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 400px) {
+      width: 80%;
+    }
+    .carousel-item  {
+      h4 {
+        font-size: 18px;
+        color: black;
+        margin-top: 25px;
+        margin-left: 30px;
+        position: absolute;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+      h5 {
+        font-size: 18px;
+        color: black;
+        margin-top: -40px;
+        margin-left: 30px;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+          margin-left: 20px;
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+}
+
+
+// INPUT SECTION
+.input-section {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 991px) {
+    width: 90%;
+  }
+  .inputs-row {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1100px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+    }
+    .input-container-column {
+      width: 45%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 650px) {
+        width: 48%;
+      }
+      @media screen and (max-width: 550px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        margin-bottom: 10px;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+        }
+      }
+      .credit-cards {
+        width: 100%;
+        height: 55px;
+        border-radius: 0;
+        text-indent: 20px;
+        transition: 1s;
+        border-left: 2px solid #13B86D;
+        border-top: 2px solid #13B86D;
+        border-bottom: 2px solid #13B86D;
+        border-right: none;
+        @media screen and (max-width: 550px) {
+          height: 50px;
+          margin-top: 0;
+          border-left: 1.5px solid #13B86D;
+          border-top: 1.5px solid #13B86D;
+          border-bottom: 1.5px solid #13B86D;
+          border-right: none;
+        }
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 500;
+          text-indent: 20px;
+          color: #13B86D90;
+          transition: 1s;
+          @media screen and (max-width: 550px) {
+            font-size: 14px;
+          }
+        }
+        &:hover {
+          border-color: #009F80;
+          border-right: none;
+          &::placeholder {
+            color: #009F80;
+          }
+        }
+        &:focus {
+          outline: none;
+          border-radius: none;
+        }
+      }
+      .credit-card-name {
+        width: 100%;
+        height: 55px;
+        border-radius: 0;
+        border: 2px solid #13B86D;
+        text-indent: 20px;
+        transition: 1s;
+        @media screen and (max-width: 550px) {
+          height: 50px;
+          margin-top: 0;
+          border: 1.5px solid #13B86D;
+        }
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 500;
+          text-indent: 20px;
+          color: #13B86D90;
+          transition: 1s;
+          @media screen and (max-width: 550px) {
+            font-size: 14px;
+          }
+        }
+        &:focus {
+          outline: none;
+          border-radius: none;
+        }
+        &:hover {
+          border-color: #009F80;
+          &::placeholder {
+            color: #009F80;
+          }
+        }
+      }
+    }
+  }
+
+  // PRIMARY BUTTON
+  .add-cards-primary-btn {
+    width: 40%;
+    height: 65px;
+    background-color: #13B86D;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 13px;
+    border: none;
+    margin-top: 50px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: #009F80;
+    }
+    @media screen and (max-width: 991px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 550px) {
+      height: 55px;
+      width: 100%;
+      margin-top: 0;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  }
+}
+
+//  ALERT BOX
+.alertbox {
+  width: 90%;
+  height: fit-content;
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F3F5;
+  border-radius: 13px;
+  padding: 20px;
+  margin-bottom: 30px;
+  .alert-heading {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    @media screen and (max-width: 550px) {
+      font-size: 16px;
+    }
+  }
+  .alert-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #717171;
+    margin-top: 20px;
+    text-align: center;
+    @media screen and (max-width: 550px) {
+      font-size: 14px;
+    }
+  }
+  .alert-btn {
+    width: 180px;
+    height: 55px;
+    background-color: transparent;
+    border-radius: 13px;
+    border: 2px solid #13B86D;
+    font-size: 16px;
+    color: #13B86D;
+    font-weight: 500;
+    transition: 1s;
+    margin-top: 30px;
+    cursor: pointer;
+    @media screen and (max-width: 550px) {
+      margin-top: 20px;
+    }
+    &:hover {
+      border-color: #009F80;
+      color: #009F80;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.input-credit-cards-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  .credit-card-expiration {
+    width: 70px;
+    height: 55px;
+    border-radius: 0;
+    border-right: 2px solid #13B86D;
+    border-top: 2px solid #13B86D;
+    border-bottom: 2px solid #13B86D;
+    border-left: none;
+    text-indent: 10px;
+    transition: 1s;
+    @media screen and (max-width: 550px) {
+      height: 50px;
+      margin-top: 0;
+      border-right: 1.5px solid #13B86D;
+      border-top: 1.5px solid #13B86D;
+      border-bottom: 1.5px solid #13B86D;
+    }
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 500;
+      text-indent: 10px;
+      color: #13B86D90;
+      transition: 1s;
+      @media screen and (max-width: 550px) {
+        font-size: 14px;
+      }
+    }
+    &:focus {
+      outline: none;
+      border-radius: none;
+    }
+    &:hover {
+      border-color: #009F80;
+      border-left: none;
+      &::placeholder {
+        color: #009F80;
+      }
+    }
+  }
+}

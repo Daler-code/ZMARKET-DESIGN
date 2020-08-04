@@ -1,0 +1,406 @@
+
+// SETTINGS SECTION
+.settings-page-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  .settings-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .section-title {
+      width: 90%;
+      font-size: 22px;
+      font-weight: 600;
+      color: #9A9A9A;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      @media screen and (max-width: 991px) {
+        width: 90%;
+        font-size: 16px;
+      }
+    }
+    .section-devider {
+      width: 90%;
+      border-bottom: 2px solid #9A9A9A;
+      margin-bottom: 10px;
+      @media screen and (max-width: 768px) {
+        width: 90%;
+      }
+    }
+    .settings-page-row1 {
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      // border: 2px solid pink;
+    }
+    .input-container-settings-page {
+      width: 30%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      @media screen and (max-width: 768px) {
+        width: 40%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+      span { 
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        @media screen and (max-width: 550px) {
+          font-size: 14px;
+        }
+      }
+      .tel-input-row-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+
+        .mask {
+          width: 100px;
+          height: 55px;
+          background-color: #13B86D;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+          font-weight: 500;
+          @media screen and (max-width: 550px) {
+            width: 80px;
+            height: 50px;
+            font-size: 14px;
+          }
+
+        }
+      }
+    }
+
+    .input-container2-settings-page {
+      width: 40%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        @media screen and (max-width: 550px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .input-filled-settings-page {
+      width: 100%;
+      height: 55px;
+      background-color: #13B86D;
+      color: white;
+      border-radius: 0;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 550px) {
+        font-size: 14px;
+        height: 50px;
+      }
+    }
+    .input-outline-settings-page {
+      width: 100%;
+      height: 55px;
+      border: 1px solid grey;
+      border-radius: 0;
+      text-align: center;
+      cursor: pointer;
+      transition: 1s;
+      background-color: #F9F9F9;
+      color: #009F80;
+      @media screen and (max-width: 550px) {
+        height: 50px;
+      }
+      &:hover {
+        border-color: #009F80;
+        &::placeholder {
+          color: #009F80;
+        }
+      }
+      &:focus {
+        outline: none;
+        border-radius: none;
+      }
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 600;
+        color: grey;
+        @media screen and (max-width: 550px) {
+          font-size: 14px;
+        }
+      }
+      option {
+        font-size: 18px;
+        font-weight: 400;
+        color: grey;
+      }
+    }
+    select {
+      text-indent: 20px;
+      color: grey;
+    }
+
+    .input-outline-tel-settings-page {
+      width: 100%;
+      height: 55px;
+      border: 1px solid grey;  
+      border-radius: 0;
+      cursor: pointer;
+      transition: 1s;
+      background-color: #F9F9F9;
+      text-indent: 20px;
+      @media screen and (max-width: 550px) {
+        height: 50px;
+        text-indent: 6px;
+      }
+      &:hover {
+        border-color: #009F80;
+        &::placeholder {
+          color: #009F80;
+        }
+      }
+      &:focus {
+        outline: none;
+        border-radius: none;
+      }
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 600;
+        color: grey;
+        @media screen and (max-width: 550px) {
+          font-size: 14px;
+        }
+      }
+      option {
+        font-size: 18px;
+        font-weight: 400;
+        color: grey;
+      }
+    }
+    .btn-primary-filled {
+      width: 30%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 11px;
+      background-color: #009F80; 
+      color: white;
+      cursor: pointer;
+      transition: 1s;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 30px;
+      border: none;
+      &:hover {
+        background-color: #13B86D;
+      }
+      &:focus {
+        outline: none;
+      }
+      @media screen and (max-width: 991px) {
+        width: 40%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        height: 65px;
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 550px) {
+        width: 90%;
+        height: 55px;
+        font-size: 16px;
+      }
+    }
+
+  }
+}
+
+
+// DOCUMENT SUBMISSION SECTION
+.document-selection {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  .section-title {
+    width: 90%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #9A9A9A;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+      font-size: 16px;
+    }
+  }
+  .section-devider {
+    width: 90%;
+    border-bottom: 2px solid #9A9A9A;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  .documentt-row {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+    }
+    .document-col {
+      width: 25%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 991px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 550px) {
+        width: 70%;
+        margin-bottom: 30px;
+      }
+    }
+    .document-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      color: #009F80; 
+      margin-bottom: 10px;
+      @media screen and (max-width: 991px) {
+        font-size: 17px;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 16px;
+      }
+    }
+    .document-container {
+      width: 100%;
+      height: 25vh;
+      border: 2px solid #009F80;
+      border-radius: 13px;
+      overflow: hidden;
+      @media screen and (max-width: 550px) {
+        height: 18vh;
+      }
+      img {
+        height: 100%;
+        width: auto;
+        object-fit: fill;
+      }
+    }
+
+    .custom-file-upload {
+      width: 100%;
+      height: 55px;
+      background-color: #9A9A9A;
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 13px;
+      transition: 1s;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: 1s;
+      &:hover {
+        background-color: grey;
+      }
+      .document-submit-button {
+        display: none;
+      }
+      @media screen and (max-width: 550px) {
+        height: 50px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .btn-primary-filled-save {
+    width: 30%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    background-color: #009F80; 
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    border: none;
+    &:hover {
+      background-color: #13B86D;
+    }
+    &:focus {
+      outline: none;
+    }
+    @media screen and (max-width: 991px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 50%;
+      height: 65px;
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 70%;
+      height: 55px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}

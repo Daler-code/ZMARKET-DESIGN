@@ -1,0 +1,993 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container-row {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+// NAVBAR
+.navbar-custom-user-cabinet {
+  width: 100vw;
+  height: 90px;
+  background-color: black;
+  border: none;
+  position: fixed;
+  z-index: 1000;
+  .navbar-brand-user-cabinet {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    img {
+      width: auto;
+      height: 25px;
+      @media screen and (max-width: 550px) {
+        width: auto;
+        height: 20px;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  .nav-item-user-cabinet {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    .nav-link {
+      color: white;
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .menu-icon-user-cabinet {
+    width: 30px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+      &:focus {
+        outline: none;
+      }
+    }
+    float: left;
+  }
+  .collapse-user-cabinet {
+    background-color: black;
+    z-index: 888;
+    @media screen and (max-width: 991px) {
+      width: 100vw;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+
+    .navbar-nav-user-cabinet {
+      z-index: 888;
+      background-color: black;
+        @media screen and (max-width: 991px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 50vh;
+          padding: 0;
+        }
+    }
+  }
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+  .nav-language {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 25px;
+    .language-item {
+      width: 35px;
+      height: 35px;
+      border-radius: 40px;
+      border: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: white;
+      margin-left: 20px;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+  .nav-zpay {
+    width: 36px;
+    height: auto;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -3px;
+    img {
+      width: 100%;
+      height: auto;
+      border: 2px solid white;
+      border-radius: 40px;
+      margin: auto;
+    }
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  .my-profile-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #009F80;
+    margin-right: 8px;
+    cursor: pointer;
+    @media screen and (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 23px;
+      height: auto;
+    }
+  }
+}
+
+//ASIDE PROFILE TAB
+.aside-profile-tab {
+  width: 450px;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F1F3F5;
+  transition: all 500ms linear;
+  z-index: 888;
+  @media screen and (max-width: 768px) {
+    width: 450px;
+    position: absolute;
+    height: auto;
+    overflow-y: hidden;
+    display: none; // test
+  }
+  @media screen and (max-width: 1200px) {
+    height: 120vh;
+  }
+  @media screen and (max-width: 991px) {
+    height: 140vh;
+  }
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
+  .personal-info-top {
+    width: 100%;
+    height: 30%;
+    background-color: #009F80;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    @media screen and (max-width: 991px) {
+      height: 20%;
+    }
+    .user-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+      margin-top: auto;
+      @media screen and (max-width: 550px) {
+        width: 75px;
+        height: 75px;
+        border-radius: 75px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .username {
+      font-size: 22px;
+      font-weight: 500;
+      color: white;
+      margin-top: 20px;
+      @media screen and (max-width: 450px) {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+    .user-id {
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      @media screen and (max-width: 450px) {
+        font-size: 13px;
+        margin-top: 8px;
+      }
+    }
+  }
+  .personal-info-box {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    @media screen and (max-width: 450px) {
+      margin-left: -15px;
+    }
+    .info-1, .info-2, .info-3 {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      @media screen and (max-width: 450px) {
+        margin-top: 23px;
+      }
+      .tab-icons {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        img {
+          width: 25px;
+          height: auto;
+          @media screen and (max-width: 450px) {
+            width: 20px;
+          }
+        }
+      }
+      .info-text {
+        font-size: 16px;
+        font-weight: 600;
+        color: #009F80;
+        margin-right: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        @media screen and (max-width: 450px) {
+          font-size: 14px;
+          margin-right: 5px;
+          font-weight: 500;
+        }
+      }
+      .info-value {
+        font-size: 14px;
+        font-weight: 550;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        @media screen and (max-width: 450px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .button-settings {
+    width: 80%;
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    background-color: #009F80;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 1s;
+    margin-top: 50px;
+    cursor: pointer;
+    &:hover {
+      background-color: #34c483;
+      border-color: #34c483;
+    }
+    &:focus {
+      background-color: #34c483;
+      border-color: #34c483;
+      outline: none;
+    }
+    @media screen and (max-width: 550px) {
+      height: 50px;
+      font-size: 14px;
+      border-radius: 8px;
+    }
+  }
+}
+
+
+// Content Continer of the page
+.content-container {
+  width: 78%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid blue;
+  @media screen and (max-width: 1500px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 65%;
+  }
+  @media screen and (max-width: 991px) {
+    width: 55%;
+  }
+  @media screen and (max-width: 800px) {
+    width: 45%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  // section title
+  .section-title {
+    width: 80%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #9A9A9A;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+      font-size: 16px;
+    }
+  }
+  // HR devider
+  .section-devider {
+    width: 80%;
+    border-bottom: 2px solid #9A9A9A;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+  }
+}
+
+// CREDIT CARDS SECTION
+.credit-cards-section {
+  width: 100%;
+  height: 33vh;
+  background-image: url('../../assets/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  // border: 2px solid red;
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    height: 25vh;
+  }
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+
+  .credit-cards-row {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    @media screen and (max-width: 1100px) {
+      width: 95%;
+    }
+  }
+  // Credit Cards
+  .credit-cards1 {
+    width: 318px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/images/cardsZmarket1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .card-name {
+      font-weight: 600;
+      margin-left: 20px;
+      margin-top: 20px;
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    .card-amount {
+      font-weight: 700;
+      margin-top: auto;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      @media screen and (max-width: 1400px) {
+        margin-bottom: 15px;
+        margin-left: 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 1400px) {
+      width: 290px;
+      height: 160px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 140px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 120px;
+    }
+  }
+  .credit-cards2 {
+    width: 318px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/images/cardsZmarket2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .card-name {
+      font-weight: 600;
+      margin-left: 20px;
+      margin-top: 20px;
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    .card-amount {
+      font-weight: 700;
+      margin-top: auto;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      @media screen and (max-width: 1400px) {
+        margin-bottom: 15px;
+        margin-left: 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 1400px) {
+      width: 290px;
+      height: 160px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 140px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 120px;
+    }
+  }
+  .credit-cards3 {
+    width: 318px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/images/cardsZmarket3.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .card-name {
+      font-weight: 600;
+      margin-left: 20px;
+      margin-top: 20px;
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    .card-amount {
+      font-weight: 700;
+      margin-top: auto;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      @media screen and (max-width: 1400px) {
+        margin-bottom: 15px;
+        margin-left: 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 1400px) {
+      width: 290px;
+      height: 160px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 140px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 120px;
+    }
+  }
+  .credit-cards4 {
+    width: 318px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/images/cardsZmarket4.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .card-name {
+      font-weight: 600;
+      margin-left: 20px;
+      margin-top: 20px;
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    .card-amount {
+      font-weight: 700;
+      margin-top: auto;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      @media screen and (max-width: 1400px) {
+        margin-bottom: 15px;
+        margin-left: 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 1400px) {
+      width: 290px;
+      height: 160px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 140px;
+    }
+    @media screen and (max-width: 1200px) {
+      height: 120px;
+    }
+  }
+}
+
+
+// Credit-Cards-Mobile
+.carousel-cards-mobile {
+  width: 100%;
+  height: 30vh;
+  display: none;
+  background-image: url('../../assets/images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -30px;
+  @media screen and (max-width: 991px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel {
+    width: 70%;
+    @media screen and (min-width: 550px) and (max-width: 768px) {
+      width: 50%;
+    }
+  .carousel-control-prev {
+    margin-left: -30px;
+  }
+  .carousel-control-next {
+    margin-right: -30px;
+  }
+    .carousel-item  {
+      width: 100%;
+      h4 {
+        font-size: 18px;
+        color: black;
+        margin-top: 20px;
+        margin-left: 30px;
+        position: absolute;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+          margin-left: 20px;
+        }
+      }
+      h5 {
+        font-size: 18px;
+        color: black;
+        margin-top: -35px;
+        margin-left: 30px;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+          margin-left: 20px;
+        }
+      }
+      img {
+        width: 100%;
+        height: 80%;
+      }
+    }
+  }
+}
+
+// PAYMENT SECTION 
+.payment-section {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  @media screen and (max-width: 1300px) {
+    width: 90%;
+  }
+  .section-title {
+    width: 80%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #9A9A9A;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+      font-size: 16px;
+    }
+
+  }
+  .section-devider {
+    width: 100%;
+    border-bottom: 2px solid #9A9A9A;
+    margin-bottom: 20px;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  .secondary-title {
+    width: 100%;
+    height: fit-content;
+    border-radius: 0;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+    .debt-title {
+      width: 50%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ED6842;
+      border: 2px solid #ED6842;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      padding-left: 20px;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+    .debt-amount {
+      width: 50%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ED6842;
+      background-color: white;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ED6842;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+  
+  .secondary-title2 {
+    width: 100%;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #009F80;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  .btn-wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 991px) {
+      margin-top: 20px;
+    }
+    .btn-secondary-outline {
+      width: 20%;
+      height: 60px;
+      border-radius: 13px;
+      background-color: transparent;
+      border: 2px solid  #13B86D;
+      transition: 1s;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      @media screen and (max-width: 991px) {
+        width: 45%;
+        margin-bottom: 20px;
+        height: 50px;
+        border: 2px solid #13B86D;
+      }
+      @media screen and (max-width: 550px) {
+        border: 1px solid #13B86D;
+      }
+      .payme {
+        height: 20px;
+      }
+      img {
+        height: 25px;
+        width: auto;
+      }
+      span {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 5px;    
+      }
+      &:hover {
+        background-color: #13B86D;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+
+.alert-danger-user-cabinet-container {
+  width: 95%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  @media screen and (max-width: 550px) {
+    strong {
+      font-size: 15px;
+    }
+    font-size: 13px;
+  }
+}
+
+.full-balance {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  // border: 2px solid red;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container-full-balance-card {
+    width: 380px;
+    height: 240px;
+    // border: 2px solid red;
+    background-image: url('../../assets/images/cardsZmarket1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 12px 32px #00000013;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    @media screen and (max-width: 1500px) {
+      width: 350px;
+      height: 210px;
+    }
+    @media screen and (max-width: 1300px) {
+      width: 320px;
+      height: 200px;
+    }
+    @media screen and (max-width: 550px) {
+      width: 330px;
+      height: 200px;
+    }
+    h4 {
+      font-size: 19px;
+      font-weight: 600;
+      color: black;
+      margin-top: 20px;
+      margin-left: 30px;
+      @media screen and (max-width: 550px) {
+        font-size: 16px;
+      }
+    }
+    h5 {
+      font-size: 19px;
+      font-weight: 600;
+      color: black;
+      margin-top: auto;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      @media screen and (max-width: 550px) {
+        font-size: 16px;
+      }
+    }
+    &:hover {
+      cursor:pointer;
+      box-shadow: none;
+    }
+  }
+  .full-balance-form {
+    width: 50%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // border: 2px solid red;
+    @media screen and (max-width: 1500px) {
+      height: 210px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      height: 200px;
+    }
+    .full-balance-form-column {
+      width: 380px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 1500px) {
+        width: 350px;
+      }
+      @media screen and (max-width: 1300px) {
+        width: 320px;
+      }
+      @media screen and (max-width: 550px) {
+        width: 330px;
+        font-size: 16px;
+      }
+      .full-balance-input {
+        width: 100%;
+        height: 55px;
+        border: 1px solid grey;
+        background-color: #F9F9F9;
+        color:  #009F80;
+        border-radius: 8px;
+        transition: 1s;
+        text-indent: 0;
+        padding: 0;
+        text-indent: 20px;
+        &::placeholder {
+            font-size: 17px;
+            font-weight: 600;
+            color: grey;
+            text-indent: 20px;
+        }
+        &:focus {
+          border: 1px solid #009F80;
+            outline: none;
+            &::placeholder {
+                color: #009F80;
+            }
+        }
+        &:hover {
+          border: 1px solid #009F80;
+            &::placeholder {
+                color: #009F80;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            height: 50px;
+            &::placeholder {
+                font-size: 15px;
+            }
+        }
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: #009F80;
+        margin-bottom: 10px;
+        @media screen and (max-width: 550px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .btn-primary-outline {
+      width: 100%;
+      height: 65px;
+      border-radius: 13px;
+      color: white;
+      background-color: #009F80;
+      cursor: pointer;
+      transition: 1s;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      &:hover {
+        border: 1px solid #009F80;
+        background-color: transparent;
+        color: #009F80;
+      }
+      &:focus {
+        outline: none;
+      }
+      @media screen and (max-width: 991px) {
+        height: 55px;
+        margin-top: 10px;
+        font-size: 16px;
+        border: 1px solid #009F80;
+      }
+      @media screen and (max-width: 550px) {
+        margin-top: 30px;
+      }
+    }
+  }
+  
+}
